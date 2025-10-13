@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhitteIntel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-center">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-10  bg-gray-100 shadow-md">
+    <img class="w-10 rounded-full" src="idris.jpg" alt="logo" />
+    <div class="space-x-10">
+      <a class="transition-all duration-300 text-xl text-gray-700 hover:text-black hover:font-bold" href="#home">Home</a>
+
+      <a class="transition-all duration-300 text-xl text-gray-700 hover:text-black hover:font-bold" href="#services">Service</a>
+      <a class="transition-all duration-300 text-xl text-gray-700 hover:text-black hover:font-bold" href="#contact">Contact</a>
+      <button class="px-6 py-1 rounded-2xl bg-blue-800 text-white text-1xl italic hover:bg-blue-600">
+        Sign up Now
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-16 py-12">
+    <div class="text-left max-w-md">
+      <h1 class="uppercase font-bold text-3xl">Powering growth through intelligent software.</h1>
+      <p class="text-sm">Our platform simplifies operations, so you can focus on scaling.</p>
+      <button class="flex items-center gap-2 bg-black text-white px-4 py-2 mt-3 rounded">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+        </svg>
+        Join the waitlist
+      </button>
+    </div>
+    <img class="max-w-xs md:max-w-md" src="rizzzz.png" alt="image" />
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-10">
+    <h1 class="uppercase font-bold text-2xl text-center mb-4">Our core services</h1>
+    <p class="text-sm text-center max-w-2xl mx-auto mb-8">
+      At WhitteIntel, we offer a comprehensive suite of technology solutions designed to support businesses at every stage of growth. Our core services include:
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-20 py-4 bg-gray-200 ">
+      <div class="rounded text-center transition-transform duration-300 hover:scale-110">
+        <h2 class="font-bold text-2xl mb-2">Training</h2>
+        <img class="mx-auto " src="real training.jfif" alt="training image" />
+        <p class="text-sm px-4 py-2">
+          From beginner to pro—our training programs are tailored to fuel your tech journey.
+        </p>
+      </div>
+
+      <div class="rounded text-center transition-transform duration-300 hover:scale-110">
+        <h2 class="font-bold text-2xl mb-2">Software Development</h2>
+        <img class="mx-auto" src="software dev.png" alt="software image" />
+        <p class="text-sm px-4 py-2">
+          We turn tech enthusiasts into skilled developers through intensive, practical learning.
+        </p>
+      </div>
+
+      <div class="rounded text-center transition-transform duration-300 hover:scale-110">
+        <h2 class="font-bold text-2xl mb-2">Tech Consulting</h2>
+        <img class="mx-auto" src="consultant.png" alt="consulting image" />
+        <p class="text-sm px-4 py-2">
+          We provide expert tech consulting to help startups and businesses build smarter digital solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Sectio -->
+  <section id="contact" class="py-16 px-6 bg-gray-100">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
+      
+      <!-- Contact Info -->
+      <div class="md:w-1/2 text-left">
+        <h2 class="text-3xl font-bold mb-4">Let’s Talk</h2>
+        <p class="text-gray-700 mb-6">
+          Have a question or idea? We’d love to hear from you. Let’s build something great together.
+        </p>
+        <ul class="space-y-2 text-gray-700 text-base">
+          <li><strong>Email:</strong> hello@whitteintel.com</li>
+          <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+          <li><strong>Address:</strong>No 8,Adeniyi-jones opp chicken-republic</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="md:w-1/2 space-y-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          class="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          class="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+          class="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-blue-900 text-white font-medium py-3 px-6 rounded-md hover:bg-blue-700 transition duration-200"
+        >
+          Send Message
+        </button>
+      </form>
+
+    </div>
+  </section>
+  <footer class="bg-gray-300 py-6 px-8 text-center shadow-md">
+    &copy WhitteIntel 2025
+  </footer>
+
+</body>
+</html>
